@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1104</width>
+    <height>593</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1104</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuVendas">
+    <property name="title">
+     <string>Vendas</string>
+    </property>
+    <addaction name="actionVenda"/>
+    <addaction name="actionCadastro_Simplificado"/>
+    <addaction name="actionConsula_cancela"/>
+    <addaction name="actionConsulta_Digito"/>
+    <addaction name="actionConsulta_Produtos"/>
+    <addaction name="actionNota_Fiscal_Venda_Manual"/>
+    <addaction name="actionRelatorio_de_Vendas"/>
+   </widget>
+   <widget class="QMenu" name="menuTroca">
+    <property name="title">
+     <string>Troca</string>
+    </property>
+    <addaction name="actionTroca"/>
+    <addaction name="actionConsulta"/>
+    <addaction name="actionConsulta_Preco_troca"/>
+   </widget>
+   <widget class="QMenu" name="menuDemonstra_o">
+    <property name="title">
+     <string>Demonstração</string>
+    </property>
+    <addaction name="actionConsulta_Demonstr_o_Aberta"/>
+    <addaction name="actionRetorno_Gera_Venda"/>
+    <addaction name="actionConsulta_Pedido_PagSeguro"/>
+    <addaction name="actionPedido_PagSeguro"/>
+   </widget>
+   <widget class="QMenu" name="menuDevolucao">
+    <property name="title">
+     <string>Devolucao</string>
+    </property>
+    <addaction name="actionDevolu_o_Manual"/>
+    <addaction name="actionConsulta_Devolu_o"/>
+   </widget>
+   <widget class="QMenu" name="menuApoio">
+    <property name="title">
+     <string>Apoio</string>
+    </property>
+    <widget class="QMenu" name="menuTabelas">
+     <property name="title">
+      <string>Tabelas</string>
+     </property>
+     <addaction name="actionForma_de_Pagamento"/>
+     <addaction name="actionCOnsertos"/>
+     <addaction name="actionMotivos_Devolu_o"/>
+     <addaction name="actionVendedores"/>
+     <addaction name="actionCadastro_Vale_Presente"/>
+    </widget>
+    <widget class="QMenu" name="menuAcessos">
+     <property name="title">
+      <string>Acessos</string>
+     </property>
+     <addaction name="actionUsu_rios"/>
+     <addaction name="actionGrupos"/>
+     <addaction name="actionProgramas"/>
+     <addaction name="actionProgramas_Grupos"/>
+    </widget>
+    <widget class="QMenu" name="menuConsertos">
+     <property name="title">
+      <string>Consertos</string>
+     </property>
+     <addaction name="actionManuten_o"/>
+     <addaction name="actionConsulta_2"/>
+     <addaction name="actionRelatorio"/>
+    </widget>
+    <widget class="QMenu" name="menuImpressora_Fiscal">
+     <property name="title">
+      <string>Impressora Fiscal</string>
+     </property>
+     <addaction name="actionRedu_o_Z"/>
+     <addaction name="actionCadastra_Mapa_Resumo"/>
+     <addaction name="actionConsulta_Mapa_Resumo"/>
+     <addaction name="actionSuprimento_Fiscal"/>
+     <addaction name="actionSangria_Fiscal"/>
+    </widget>
+    <addaction name="menuTabelas"/>
+    <addaction name="menuAcessos"/>
+    <addaction name="menuConsertos"/>
+    <addaction name="menuImpressora_Fiscal"/>
+    <addaction name="actionRotinas_Especiais"/>
+    <addaction name="actionReimpress_o_de_Cart_o"/>
+   </widget>
+   <addaction name="menuVendas"/>
+   <addaction name="menuTroca"/>
+   <addaction name="menuDemonstra_o"/>
+   <addaction name="menuDevolucao"/>
+   <addaction name="menuApoio"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionVenda">
+   <property name="text">
+    <string>Venda</string>
+   </property>
+  </action>
+  <action name="actionCadastro_Simplificado">
+   <property name="text">
+    <string>Cadastro Simplificado</string>
+   </property>
+  </action>
+  <action name="actionConsula_cancela">
+   <property name="text">
+    <string>Consulta/cancela</string>
+   </property>
+  </action>
+  <action name="actionTroca">
+   <property name="text">
+    <string>Troca Manual</string>
+   </property>
+  </action>
+  <action name="actionConsulta_Digito">
+   <property name="text">
+    <string>Consulta Digito</string>
+   </property>
+  </action>
+  <action name="actionConsulta_Produtos">
+   <property name="text">
+    <string>Consulta Produtos</string>
+   </property>
+  </action>
+  <action name="actionNota_Fiscal_Venda_Manual">
+   <property name="text">
+    <string>Nota Fiscal Venda Manual</string>
+   </property>
+  </action>
+  <action name="actionRelatorio_de_Vendas">
+   <property name="text">
+    <string>Relatorio de Vendas</string>
+   </property>
+  </action>
+  <action name="actionConsulta">
+   <property name="text">
+    <string>Consulta</string>
+   </property>
+  </action>
+  <action name="actionConsulta_Preco_troca">
+   <property name="text">
+    <string>Consulta Preco troca</string>
+   </property>
+  </action>
+  <action name="actionConsulta_Demonstr_o_Aberta">
+   <property name="text">
+    <string>Consulta Demonstrção Aberta</string>
+   </property>
+  </action>
+  <action name="actionRetorno_Gera_Venda">
+   <property name="text">
+    <string>Retorno / Gera Venda</string>
+   </property>
+  </action>
+  <action name="actionConsulta_Pedido_PagSeguro">
+   <property name="text">
+    <string>Consulta Pedido PagSeguro</string>
+   </property>
+  </action>
+  <action name="actionPedido_PagSeguro">
+   <property name="text">
+    <string>Pedido PagSeguro</string>
+   </property>
+  </action>
+  <action name="actionDevolu_o_Manual">
+   <property name="text">
+    <string>Devolução Manual</string>
+   </property>
+  </action>
+  <action name="actionConsulta_Devolu_o">
+   <property name="text">
+    <string>Consulta Devolução</string>
+   </property>
+  </action>
+  <action name="actionForma_de_Pagamento">
+   <property name="text">
+    <string>Forma de Pagamento</string>
+   </property>
+  </action>
+  <action name="actionCOnsertos">
+   <property name="text">
+    <string>Consertos</string>
+   </property>
+  </action>
+  <action name="actionMotivos_Devolu_o">
+   <property name="text">
+    <string>Motivos Devolução</string>
+   </property>
+  </action>
+  <action name="actionVendedores">
+   <property name="text">
+    <string>Vendedores</string>
+   </property>
+  </action>
+  <action name="actionCadastro_Vale_Presente">
+   <property name="text">
+    <string>Cadastro Vale Presente</string>
+   </property>
+  </action>
+  <action name="actionUsu_rios">
+   <property name="text">
+    <string>Usuários</string>
+   </property>
+  </action>
+  <action name="actionGrupos">
+   <property name="text">
+    <string>Grupos</string>
+   </property>
+  </action>
+  <action name="actionProgramas">
+   <property name="text">
+    <string>Programas</string>
+   </property>
+  </action>
+  <action name="actionProgramas_Grupos">
+   <property name="text">
+    <string>Programas/Grupos</string>
+   </property>
+  </action>
+  <action name="actionManuten_o">
+   <property name="text">
+    <string>Manutenção</string>
+   </property>
+  </action>
+  <action name="actionConsulta_2">
+   <property name="text">
+    <string>Consulta</string>
+   </property>
+  </action>
+  <action name="actionRelatorio">
+   <property name="text">
+    <string>Relatorio</string>
+   </property>
+  </action>
+  <action name="actionRedu_o_Z">
+   <property name="text">
+    <string>Redução Z</string>
+   </property>
+  </action>
+  <action name="actionCadastra_Mapa_Resumo">
+   <property name="text">
+    <string>Cadastra Mapa Resumo</string>
+   </property>
+  </action>
+  <action name="actionConsulta_Mapa_Resumo">
+   <property name="text">
+    <string>Consulta Mapa Resumo</string>
+   </property>
+  </action>
+  <action name="actionSuprimento_Fiscal">
+   <property name="text">
+    <string>Suprimento Fiscal</string>
+   </property>
+  </action>
+  <action name="actionSangria_Fiscal">
+   <property name="text">
+    <string>Sangria Fiscal</string>
+   </property>
+  </action>
+  <action name="actionRotinas_Especiais">
+   <property name="text">
+    <string>Rotinas Especiais</string>
+   </property>
+  </action>
+  <action name="actionReimpress_o_de_Cart_o">
+   <property name="text">
+    <string>Reimpressão de Cartão</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
